@@ -133,14 +133,26 @@
 
 .flower-section{
     gap: 60px;
+    margin-bottom: 133px;
 }
 .right-item{
-    
+    padding: 38px;
 }
 .li-gap{
     margin-top: 20px;
 }
-
+.badge{
+    width: 286px;
+    height: 286px;
+    position: absolute;
+    top: -127px;
+    right: -127px;
+    background-color: transparent;
+    filter: drop-shadow(-4px 10px 4px rgba(0, 0, 0, 0.25));
+}
+.img-container{
+    position: relative;
+}
 /* responsive styles */
 @media screen and (max-width: 768px) {
     .nav-container {
@@ -226,5 +238,31 @@
         align-items: center;
         gap: 20px;
         row-gap: 28px;
+        margin-bottom: 41px;
+    }
+    /* flower and plant section  */
+    .flower-section{
+        flex-direction: column;
+        gap: 18px;
+    }
+    .store{
+        width: 362px;
+        margin: 0 17px;
+    }
+    .badge{
+        display: none;
+    }
+    .right-item h3{
+        font-size: 24px;
+        margin: 0;
+    }
+    .right-item ul li{
+        font-size: 14px;
+    }
+    .li-gap{
+        margin-top: 16px;
+    }
+    br{
+        display: none;
     }
 }
