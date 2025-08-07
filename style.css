@@ -153,6 +153,69 @@
 .img-container{
     position: relative;
 }
+
+/* latest deal section design  */
+.deal-text{
+    text-align: center;
+    margin-bottom: 120px;
+    
+}
+.deal-text h3 span{
+    color: #E95A08;
+}
+.deal-text p{
+    margin-top: 16px;
+}
+.card-sec{
+    height: 206px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+    border-radius: 20px;
+    
+}
+.card-sec h3,
+.card-sec span {
+  background-color: transparent;
+  color: white;
+}
+.card-sec span{
+    text-decoration: underline;
+}
+.deal-container{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: repeat(2, 1fr);
+    gap: 28px 25px;
+    margin-top: 120px;
+    margin-bottom: 120px;
+}
+
+.bloom{
+    background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 1)), url("./assets/deal-bloom.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.ana{
+    background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 1)), url("./assets/deal-ana.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.zabo{
+    background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 1)), url("./assets/deal-zabo.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100%;
+    grid-column: 2/3;
+    grid-row: 1/3;
+}
+
+
 /* responsive styles */
 @media screen and (max-width: 768px) {
     .nav-container {
@@ -170,6 +233,7 @@
         display: block;
     }
 /* hero section resposive */
+
     .hero-section {
         flex-direction: column-reverse;
         margin: 0;
@@ -244,6 +308,7 @@
     .flower-section{
         flex-direction: column;
         gap: 18px;
+        margin-bottom: 143px;
     }
     .store{
         width: 362px;
@@ -251,6 +316,9 @@
     }
     .badge{
         display: none;
+    }
+    .img-container{
+        margin: 0 auto;
     }
     .right-item h3{
         font-size: 24px;
@@ -264,5 +332,38 @@
     }
     br{
         display: none;
+    }
+    /* latest deals responsive  */
+    .deal-text{
+        margin-bottom: 0px;
+    }
+    .deal-text h3{
+        font-size: 24px;
+        font-weight: bold;
+    }
+    .deal-text p{
+        font-size: 14px;
+        font-weight: 400;
+        width: 336px;
+        margin: 0 auto;
+        margin-top: 16px;
+    }
+    .card-sec{
+        height: 184px;
+        width: 360px;
+        margin: 0 auto;
+    }
+    .deal-container{
+        grid-template-columns: repeat(1, 1fr);
+        /* margin: 50px 16px 0px 16px; */
+        padding: 0 16px;
+        margin-top: 51px;
+        gap: 20px;
+        margin-bottom: 40px;
+        
+    }
+    .zabo{
+        grid-column: auto;
+        grid-row: auto;
     }
 }
